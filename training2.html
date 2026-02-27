@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blade Ball Clash Tester</title>
+    <link rel="stylesheet" href="clashstyle.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CLASH <span class="highlight">TESTER</span></h1>
+            <p>Mode: Mouse + F + G (10 Giây)</p>
+        </header>
+
+        <div class="input-display">
+            <div id="key-LMB" class="key-box">LMB</div>
+            <div id="key-F" class="key-box">F</div>
+            <div id="key-G" class="key-box">G</div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <span class="label">TIME LEFT</span>
+                <span id="timer" class="value">10.0s</span>
+            </div>
+            <div class="stat-box">
+                <span class="label">TOTAL INPUTS</span>
+                <span id="total-input" class="value">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="label">STABILITY</span>
+                <span id="stability" class="value">100%</span>
+            </div>
+        </div>
+
+        <div id="clash-zone" class="clash-zone">
+            <span>NHẤN BẤT KỲ ĐỂ BẮT ĐẦU CLASH</span>
+        </div>
+
+        <div id="result-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>CLASH PERFORMANCE</h2>
+                <div id="rank-badge" class="badge">RANK</div>
+                <p id="rank-desc">Mô tả</p>
+                <div class="final-stats">
+                    <p>Trung bình: <span id="final-cps">0</span> CPS</p>
+                </div>
+                <button onclick="location.reload()">THỬ LẠI</button>
+            </div>
+        </div>
+    </div>
+    <script src="clash-script.js"></script>
+</body>
+</html>

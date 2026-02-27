@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Time Test - Blade Ball</title>
+    <link rel="stylesheet" href="reaction-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="stats-bar">
+            <div>BEST: <span id="best-time">--</span>ms</div>
+            <div>AVERAGE (5): <span id="avg-time">--</span>ms</div>
+        </div>
+
+        <div class="arena" id="game-arena">
+            <div id="target-zone" class="target-zone">
+                <span id="prompt-text">WAIT...</span>
+            </div>
+            <div id="projectile" class="projectile hidden"></div>
+        </div>
+
+        <div id="reaction-modal" class="modal hidden">
+            <div class="modal-content">
+                <h1 id="result-time">0ms</h1>
+                <div id="evaluation" class="evaluation">ĐÁNH GIÁ</div>
+                <p id="feedback-msg"></p>
+                <button class="retry-btn" onclick="resetGame()">TIẾP TỤC</button>
+            </div>
+        </div>
+    </div>
+    <script src="reaction-script.js"></script>
+</body>
+</html>

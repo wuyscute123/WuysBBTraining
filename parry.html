@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Parry Test - Moveable Edition</title>
+    <link rel="stylesheet" href="parry-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="hud">
+            <div class="speed-meter">SPEED: <span id="current-speed">15</span></div>
+            <p class="hint">WASD để di chuyển | F hoặc Click để Parry</p>
+        </div>
+
+        <div class="speed-controls">
+            <button class="ctrl-btn up" onclick="adjustSpeed(5)">▲ SPEED +5</button>
+            <button class="ctrl-btn down" onclick="adjustSpeed(-5)">▼ SPEED -5</button>
+        </div>
+
+        <div class="arena" id="arena">
+            <div id="ai-player" class="player-area ai-pos">
+                <div class="circle ai-circle">
+                    <div class="parry-zone"></div>
+                </div>
+                <span class="label">IMPOSSIBLE AI</span>
+            </div>
+
+            <div id="ball" class="ball"></div>
+
+            <div id="user-player" class="player-area player-pos">
+                <div id="player-circle" class="circle player-circle">
+                    <div class="parry-zone"></div>
+                </div>
+                <span class="label">PLAYER</span>
+            </div>
+        </div>
+
+        <div id="result-modal" class="modal hidden">
+            <div class="modal-content">
+                <h1 id="result-status">GAME OVER</h1>
+                <p>Tốc độ cao nhất: <span id="max-speed">0</span></p>
+                <div id="rank-tag" class="rank-tag">RANK</div>
+                <button class="retry-btn" onclick="location.reload()">THỬ LẠI</button>
+            </div>
+        </div>
+    </div>
+    <script src="parry-script.js"></script>
+</body>
+</html>

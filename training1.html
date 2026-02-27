@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Blade Ball CPS Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CPS <span class="highlight">TESTER</span></h1>
+            <p class="warning">⚠️ Sử dụng autoclicker/macro sẽ bị vô hiệu hóa kết quả</p>
+        </header>
+
+        <div class="settings">
+            <button class="time-btn active" data-time="5">5S</button>
+            <button class="time-btn" data-time="10">10S</button>
+            <button class="time-btn" data-time="15">15S</button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <span class="label">TIME</span>
+                <span id="timer" class="value">0.0s</span>
+            </div>
+            <div class="stat-box">
+                <span class="label">CLICKS</span>
+                <span id="click-count" class="value">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="label">CPS</span>
+                <span id="cps-value" class="value">0.0</span>
+            </div>
+        </div>
+
+        <div id="click-area" class="click-zone">
+            <span>CLICK ĐỂ BẮT ĐẦU</span>
+        </div>
+
+        <div id="result-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>KẾT QUẢ</h2>
+                <div id="rank-badge" class="badge">RANK</div>
+                <p id="rank-desc">Mô tả hạng</p>
+                <button onclick="resetTest()">THỬ LẠI</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
