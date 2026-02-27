@@ -33,7 +33,7 @@ Chỉ cần:
 
 1. Download hoặc clone repo
 
-git clone https://github.com/yourusername/WuysBBTraining.git
+git clone https://github.com/wuyscute123/WuysBBTraining.git
 
 Mở thư mục
 Chạy file:
