@@ -51,30 +51,7 @@ Project bao gồm nhiều mode training:
 Main menu:
 
 mainpage.html
-📁 Project Structure
-WuysBBTraining/
-│
-├── mainpage.html          # main menu
-│
-├── reaction.html
-├── reaction-script.js
-├── reaction-style.css
-│
-├── parry.html
-├── parry-script.js
-├── parry-style.css
-│
-├── training1.html
-├── training2.html
-│
-├── clash-script.js
-├── clashstyle.css
-│
-├── script.js
-├── style.css
-├── main-style.css
-│
-└── README.md
+
 💻 Requirements
 
 - Windows 10 / 11
